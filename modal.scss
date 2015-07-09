@@ -1,0 +1,50 @@
+.modal{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 2px;
+
+	.modal-hd{
+		height: 52px;
+		line-height: 52px;
+		border-bottom: 1px solid #e5e5e5;
+		
+		h2{
+			text-align: center;
+			margin: 0 36px;
+			font-weight: normal;
+			font-size: 15px;
+			color: #383d48;
+		}
+		span{
+			display: inline-block;
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			width: 20px;
+			height: 20px;
+			background-image: url(img/close.png);
+			background-size: 100%;
+			cursor: pointer;
+			&:hover{
+				background-image:url(img/close-active.png);
+			};
+		}
+	}
+	.modal-bd{
+		position: relative;
+		overflow: auto;
+	}
+}
+.modal-mask{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #1e232e;
+	opacity: .6;
+}
